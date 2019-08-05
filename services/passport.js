@@ -39,10 +39,10 @@ passport.use(
     )
 );
 
-passport.use(
+/*passport.use(
     new FacebookStrategy({
             clientID: keys.facebookClientID,
-            clientSecret: keys.facebookClientSecret;
+            clientSecret: keys.facebookClientSecret,
             callbackURL: '/auth/facebook/callback'
         },
         (accessToken, refreshToken, profile, done) => {
@@ -60,4 +60,4 @@ passport.use(
 
         }
     )
-);
+);*/

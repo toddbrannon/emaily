@@ -22,7 +22,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get('/', (req, res) => {
-    res.send("Hello!");
+    res.send("Hello from Emaily (soon to be TruSponse Engage!)");
 });
 
 require('./routes/authRoutes')(app);
