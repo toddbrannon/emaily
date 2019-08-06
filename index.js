@@ -25,6 +25,8 @@ app.get('/', (req, res) => {
     res.send("Hello from Emaily (soon to be TruSponse Engage!)");
 });
 
+app.get('/auth/google/callback', passport.authenticate('google'));
+
 require('./routes/authRoutes')(app);
 
 const port = process.env.PORT || 5000;
